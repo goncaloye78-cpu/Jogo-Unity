@@ -1,0 +1,37 @@
+Instruções de utilização do GitHub Desktop
+
+1. Antes de começar a trabalhar
+
+Abrir o GitHub Desktop.
+Selecionar o repositório do projeto.
+Clicar em Fetch origin para verificar se existem alterações.
+Se existirem alterações, clicar em Pull origin para as receber.
+
+2. Fazer alterações ao projeto
+
+Abrir o projeto no Unity.
+Fazer as alterações necessárias.
+Guardar as alterações.
+
+3. Enviar as alterações
+
+Voltar ao GitHub Desktop.
+Verificar as alterações na secção Changes.
+Escrever uma descrição no campo Summary.
+Clicar em Commit to main.
+Clicar em Push origin para enviar as alterações para o GitHub.
+
+4. Significado dos botões
+
+Commit: regista as alterações no computador.
+Push: envia as alterações para o GitHub.
+Fetch: verifica se existem alterações novas.
+Pull: recebe e integra as alterações no projeto local.
+
+5. Cuidados importantes
+
+Fazer Pull antes de começar a trabalhar.
+Fazer Commit e Push depois de terminar as alterações.
+Não alterar os mesmos ficheiros que outro colega ao mesmo tempo, sempre que possível.
+Se aparecer um conflito, não eliminar ficheiros nem alterações sem verificar primeiro o problema.
+No Unity, não enviar a pasta Library para o GitHub.
