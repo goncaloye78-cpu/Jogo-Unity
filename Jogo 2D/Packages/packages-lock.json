@@ -151,6 +151,12 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.ide.vscode": {
+      "version": "file:com.unity.ide.vscode",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.inputsystem": {
       "version": "1.19.0",
       "depth": 0,
