@@ -1,7 +1,9 @@
+using System.Collections;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public int health = 100;
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
 
@@ -13,6 +15,7 @@ public class Player : MonoBehaviour
     private bool isGrounded;
 
     private Animator animator;
+    private SpriteRenderer SpriteRenderer;
 
     public int extraJumpValue = 1;
     private int extraJump;
@@ -21,6 +24,8 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        SpriteRenderer = GetComponent<SpriteRenderer>();
+
         extraJump = extraJumpValue;
     }
 
@@ -35,6 +40,7 @@ public class Player : MonoBehaviour
         }        
 
        /*  double jump desbloqueavel - após alguma condição mudamos para este « if »
+        *  
         if (isGrounded)
         {
             extraJump = extraJumpValue;
@@ -85,4 +91,32 @@ public class Player : MonoBehaviour
             }
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Damage")
+        {
+            health -= 25;
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            StartCoroutine(BlinkRed());
+
+            if(health < 0)
+            {
+                Die();
+            }
+        }
+    }
+
+    private IEnumerator BlinkRed()
+    {
+        SpriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        SpriteRenderer.color = Color.white;
+    }
+
+    private void Die()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
+    }
+
 }
