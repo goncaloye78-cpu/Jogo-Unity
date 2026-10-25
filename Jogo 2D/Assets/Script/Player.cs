@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Player : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
+
+    public Image healthImagem;
 
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -59,6 +62,8 @@ public class Player : MonoBehaviour
        */      
 
         SetAnimation(moveInput);
+
+        healthImagem.fillAmount = health / 5f;
     }
 
     private void FixedUpdate()
@@ -104,7 +109,7 @@ public class Player : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             StartCoroutine(BlinkRed());
 
-            if(health < 0)
+            if(health <= 0)
             {
                 Die();
             }
