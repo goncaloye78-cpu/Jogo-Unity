@@ -4,22 +4,31 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public int health = 5;
+    // --- MOVIMENTO DO PLAYER ------------------------
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
 
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
-    public LayerMask groundLayer;
+    public LayerMask groundLayer;    
 
-    public Image healthImagem;
+    // --- VIDA DO PLAYER ------------------------
+    public int vidaMax = 5;
+    public int vida;
+    public Sprite emptyHeart;
+    public Sprite fullHeart;
+    public Image[] hearts;
+
+    // public Image healthImagem; ANTIGO SISTEMA DE VIDA
 
     private Rigidbody2D rb;
     private bool isGrounded;
 
+    // --- ANIMAÇÃO ------------------------
     private Animator animator;
     private SpriteRenderer SpriteRenderer;
 
+    // --- DOUBLE JUMP ------------------------
     public int extraJumpValue = 1;
     private int extraJump;
 
@@ -29,6 +38,7 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
         SpriteRenderer = GetComponent<SpriteRenderer>();
 
+        vida = vidaMax;
         extraJump = extraJumpValue;
     }
 
@@ -40,30 +50,51 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }        
+        }
 
-       /*  double jump desbloqueavel - após alguma condição mudamos para este « if »
-        *  
-        if (isGrounded)
+        /*  double jump desbloqueavel - após alguma condição mudamos para este « if »
+         *  
+         if (isGrounded)
+         {
+             extraJump = extraJumpValue;
+         }
+         if (Input.GetKeyDown(KeyCode.Space))
+         {
+             if (isGrounded)
+             {
+                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+             }
+             else if(extraJump >0){
+                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                 extraJump--;
+             }
+         }
+        */
+
+        for (int i = 0; i < hearts.Length; i++)
         {
-            extraJump = extraJumpValue;
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (isGrounded)
+            if (i < vida)
             {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                hearts[i].sprite = fullHeart;
             }
-            else if(extraJump >0){
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                extraJump--;
+            else
+            {
+                hearts[i].sprite = emptyHeart;
+            }
+
+            if (i < vidaMax)
+            {
+                hearts[i].enabled = true;
+            }
+            else
+            {
+                hearts[i].enabled = false;
             }
         }
-       */      
 
         SetAnimation(moveInput);
 
-        healthImagem.fillAmount = health / 5f;
+        // healthImagem.fillAmount = health / 5f;  ANTIGO SISTEMA DE VIDA
     }
 
     private void FixedUpdate()
@@ -105,17 +136,18 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.tag == "Damage")
         {
-            health -= 1;
+            vida -= 1;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             StartCoroutine(BlinkRed());
 
-            if(health <= 0)
+            if(vida <= 0)
             {
                 Die();
             }
         }
     }
 
+    // ---------------- Qunado Toma Dano ----------------------
     private IEnumerator BlinkRed()
     {
         SpriteRenderer.color = Color.red;
