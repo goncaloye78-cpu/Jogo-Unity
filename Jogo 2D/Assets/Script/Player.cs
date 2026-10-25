@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int health = 100;
+    public int health = 5;
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
 
@@ -66,6 +66,8 @@ public class Player : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 
+    // ----------------------- ANIMAÇÂO -------------------------------
+
     private void SetAnimation(float moveInput)
     {
         if ((isGrounded))
@@ -92,11 +94,13 @@ public class Player : MonoBehaviour
         }
     }
 
+    // ----------------------- DANO -------------------------------
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Damage")
         {
-            health -= 25;
+            health -= 1;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             StartCoroutine(BlinkRed());
 
