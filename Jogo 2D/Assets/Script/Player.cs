@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
 
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
-    public LayerMask groundLayer;    
+    public LayerMask groundLayer;
 
     // --- VIDA DO PLAYER ------------------------
     public int vidaMax = 5;
@@ -19,14 +19,13 @@ public class Player : MonoBehaviour
     public Sprite fullHeart;
     public Image[] hearts;
 
-    // public Image healthImagem; ANTIGO SISTEMA DE VIDA
-
     private Rigidbody2D rb;
     private bool isGrounded;
 
     // --- ANIMAÇÃO ------------------------
     private Animator animator;
-    private SpriteRenderer SpriteRenderer;
+    private SpriteRenderer spriteRenderer;
+    private string currentAnimation = "";
 
     // --- DOUBLE JUMP ------------------------
     public int extraJumpValue = 1;
@@ -36,7 +35,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        SpriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         vida = vidaMax;
         extraJump = extraJumpValue;
@@ -44,57 +43,25 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        float moveInput = Input.GetAxis("Horizontal");
-        rb.linearVelocity = new Vector2 (moveInput * moveSpeed, rb.linearVelocityY);
-        
+        float moveInput = Input.GetAxisRaw("Horizontal");
+
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocityY);
+
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
 
-        /*  double jump desbloqueavel - após alguma condição mudamos para este « if »
-         *  
-         if (isGrounded)
-         {
-             extraJump = extraJumpValue;
-         }
-         if (Input.GetKeyDown(KeyCode.Space))
-         {
-             if (isGrounded)
-             {
-                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-             }
-             else if(extraJump >0){
-                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                 extraJump--;
-             }
-         }
-        */
-
         for (int i = 0; i < hearts.Length; i++)
         {
-            if (i < vida)
-            {
-                hearts[i].sprite = fullHeart;
-            }
-            else
-            {
-                hearts[i].sprite = emptyHeart;
-            }
+            if (i < vida) hearts[i].sprite = fullHeart;
+            else hearts[i].sprite = emptyHeart;
 
-            if (i < vidaMax)
-            {
-                hearts[i].enabled = true;
-            }
-            else
-            {
-                hearts[i].enabled = false;
-            }
+            if (i < vidaMax) hearts[i].enabled = true;
+            else hearts[i].enabled = false;
         }
 
         SetAnimation(moveInput);
-
-        // healthImagem.fillAmount = health / 5f;  ANTIGO SISTEMA DE VIDA
     }
 
     private void FixedUpdate()
@@ -106,58 +73,75 @@ public class Player : MonoBehaviour
 
     private void SetAnimation(float moveInput)
     {
-        if ((isGrounded))
+        // MODIFICADO: Símbolos do flip invertidos para corrigir o moonwalk!
+        if (moveInput > 0.1f)
         {
-            if (moveInput == 0) 
+            spriteRenderer.flipX = true;
+        }
+        else if (moveInput < -0.1f)
+        {
+            spriteRenderer.flipX = false;
+        }
+
+        if (isGrounded)
+        {
+            // Se o input e a velocidade física forem quase nulos, força o Idle
+            if (Mathf.Abs(moveInput) < 0.1f && Mathf.Abs(rb.linearVelocity.x) < 0.1f)
             {
-                animator.Play("Walk");
+                ChangeAnimationState("playerIdle");
             }
             else
             {
-                animator.Play("playerRun");
+                ChangeAnimationState("playerRun");
             }
         }
         else
         {
-            if(rb.linearVelocityY > 0)
+            if (rb.linearVelocityY > 0)
             {
-                animator.Play("playerJump");
+                ChangeAnimationState("playerJump");
             }
             else
             {
-                animator.Play("playerFall");
+                ChangeAnimationState("playerFall");
             }
         }
+    }
+
+    private void ChangeAnimationState(string newAnimation)
+    {
+        if (currentAnimation == newAnimation) return;
+
+        animator.Play(newAnimation);
+        currentAnimation = newAnimation;
     }
 
     // ----------------------- DANO -------------------------------
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Damage")
+        if (collision.gameObject.tag == "Damage")
         {
             vida -= 1;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             StartCoroutine(BlinkRed());
 
-            if(vida <= 0)
+            if (vida <= 0)
             {
                 Die();
             }
         }
     }
 
-    // ---------------- Qunado Toma Dano ----------------------
     private IEnumerator BlinkRed()
     {
-        SpriteRenderer.color = Color.red;
+        spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.1f);
-        SpriteRenderer.color = Color.white;
+        spriteRenderer.color = Color.white;
     }
 
     private void Die()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
     }
-
 }
