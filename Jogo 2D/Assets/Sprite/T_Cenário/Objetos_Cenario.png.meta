@@ -1,0 +1,1521 @@
+fileFormatVersion: 2
+guid: e7466e87989c7274d99e4cbbca30e5c5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 310109279016166769
+    second: Objetos_Cenario_0
+  - first:
+      213: 5035787948354175479
+    second: Objetos_Cenario_1
+  - first:
+      213: -1963962198672957242
+    second: Objetos_Cenario_2
+  - first:
+      213: -1438876383707109379
+    second: Objetos_Cenario_3
+  - first:
+      213: -6555210490372708187
+    second: Objetos_Cenario_4
+  - first:
+      213: 5888678375528958242
+    second: Objetos_Cenario_5
+  - first:
+      213: 6823999737555638920
+    second: Objetos_Cenario_6
+  - first:
+      213: -181138912910653538
+    second: Objetos_Cenario_7
+  - first:
+      213: -781246103720194652
+    second: Objetos_Cenario_8
+  - first:
+      213: 9117170567872583777
+    second: Objetos_Cenario_9
+  - first:
+      213: -4485407745102601371
+    second: Objetos_Cenario_10
+  - first:
+      213: 8841426706870387629
+    second: Objetos_Cenario_11
+  - first:
+      213: 7998488643304110831
+    second: Objetos_Cenario_12
+  - first:
+      213: 5509256624623996860
+    second: Objetos_Cenario_13
+  - first:
+      213: 3810614808300153797
+    second: Objetos_Cenario_14
+  - first:
+      213: 8076008620781942740
+    second: Objetos_Cenario_15
+  - first:
+      213: 7137195966149409644
+    second: Objetos_Cenario_16
+  - first:
+      213: 2625874754293002411
+    second: Objetos_Cenario_17
+  - first:
+      213: 4151398243791397647
+    second: Objetos_Cenario_18
+  - first:
+      213: -8351208244572616495
+    second: Objetos_Cenario_19
+  - first:
+      213: -8618737135564545393
+    second: Objetos_Cenario_20
+  - first:
+      213: 3196858995353762639
+    second: Objetos_Cenario_21
+  - first:
+      213: 4994806717758001569
+    second: Objetos_Cenario_22
+  - first:
+      213: 7693749448128595648
+    second: Objetos_Cenario_23
+  - first:
+      213: -9121072937696323526
+    second: Objetos_Cenario_24
+  - first:
+      213: 6402597411418686510
+    second: Objetos_Cenario_25
+  - first:
+      213: 2871470290340578007
+    second: Objetos_Cenario_26
+  - first:
+      213: 4919070730105476832
+    second: Objetos_Cenario_27
+  - first:
+      213: -7622480283034386531
+    second: Objetos_Cenario_28
+  - first:
+      213: -3920147238047109571
+    second: Objetos_Cenario_29
+  - first:
+      213: 1923155045129817150
+    second: Objetos_Cenario_30
+  - first:
+      213: 5795626850429644576
+    second: Objetos_Cenario_31
+  - first:
+      213: -7959907462246088891
+    second: Objetos_Cenario_32
+  - first:
+      213: 7094416858155457270
+    second: Objetos_Cenario_33
+  - first:
+      213: 1162266441538539746
+    second: Objetos_Cenario_34
+  - first:
+      213: 1894631069660363747
+    second: Objetos_Cenario_35
+  - first:
+      213: 4510526278428195857
+    second: Objetos_Cenario_36
+  - first:
+      213: -1023254255320942016
+    second: Objetos_Cenario_37
+  - first:
+      213: 1574199385758001937
+    second: Objetos_Cenario_38
+  - first:
+      213: 8032042757536055176
+    second: Objetos_Cenario_39
+  - first:
+      213: 7551712705003288207
+    second: Objetos_Cenario_40
+  - first:
+      213: 4728846510508982988
+    second: Objetos_Cenario_41
+  - first:
+      213: -8578640325219495485
+    second: Objetos_Cenario_42
+  - first:
+      213: 3797900217658539820
+    second: Objetos_Cenario_43
+  - first:
+      213: 6515953549142096537
+    second: Objetos_Cenario_44
+  - first:
+      213: -8484905412487238549
+    second: Objetos_Cenario_45
+  - first:
+      213: -3883876586702814321
+    second: Objetos_Cenario_46
+  - first:
+      213: 7755775586719752869
+    second: Objetos_Cenario_47
+  - first:
+      213: -3182221392960016523
+    second: Objetos_Cenario_48
+  - first:
+      213: 3298253027765469143
+    second: Objetos_Cenario_49
+  - first:
+      213: -2393154023329044165
+    second: Objetos_Cenario_50
+  - first:
+      213: -5313692534442671263
+    second: Objetos_Cenario_51
+  - first:
+      213: -7511199235140755604
+    second: Objetos_Cenario_52
+  - first:
+      213: -4789679175105686022
+    second: Objetos_Cenario_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 35
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Objetos_Cenario_0
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 698
+        width: 158
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175af490fbabd4400800000000000000
+      internalID: 310109279016166769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_1
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 698
+        width: 104
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f108d15576b2e540800000000000000
+      internalID: 5035787948354175479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_2
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 699
+        width: 97
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0adcb29ca9eb4e0800000000000000
+      internalID: -1963962198672957242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_3
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 698
+        width: 139
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df760717d85180ce0800000000000000
+      internalID: -1438876383707109379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_4
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 786
+        width: 96
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8ab6d3ac63705a0800000000000000
+      internalID: -6555210490372708187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_5
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 790
+        width: 79
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2298de178c9c8b150800000000000000
+      internalID: 5888678375528958242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_6
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 790
+        width: 63
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88adc503b97b3be50800000000000000
+      internalID: 6823999737555638920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_7
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 790
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97c5f05e177c7df0800000000000000
+      internalID: -181138912910653538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_8
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 794
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad8991dec47825f0800000000000000
+      internalID: -781246103720194652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_9
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 797
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16811be9352b68e70800000000000000
+      internalID: 9117170567872583777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_10
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 706
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563af58ab61a0c1c0800000000000000
+      internalID: -4485407745102601371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_11
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 706
+        width: 90
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da349aafebe03ba70800000000000000
+      internalID: 8841426706870387629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_12
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 706
+        width: 67
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea33241b07500f60800000000000000
+      internalID: 7998488643304110831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_13
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 706
+        width: 49
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf4e27f5bfc47c40800000000000000
+      internalID: 5509256624623996860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_14
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 700
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cbe2988af502e430800000000000000
+      internalID: 3810614808300153797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_15
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 708
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d733b45d0fb31070800000000000000
+      internalID: 8076008620781942740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_16
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 548
+        width: 138
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6bbfaeaae96c0360800000000000000
+      internalID: 7137195966149409644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_17
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 554
+        width: 100
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0fc423d2bf07420800000000000000
+      internalID: 2625874754293002411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_18
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 555
+        width: 61
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03ed5a25babc9930800000000000000
+      internalID: 4151398243791397647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_19
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 555
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d88fe0295c8a1c80800000000000000
+      internalID: -8351208244572616495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_20
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 550
+        width: 100
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82253e3d38146880800000000000000
+      internalID: -8618737135564545393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_21
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 548
+        width: 120
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4bb21f81568d5c20800000000000000
+      internalID: 3196858995353762639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_22
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 550
+        width: 48
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a153b50f3e115540800000000000000
+      internalID: 4994806717758001569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_23
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 549
+        width: 76
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6009e1c50b5ca60800000000000000
+      internalID: 7693749448128595648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_24
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 550
+        width: 109
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a389e2a1d707b6180800000000000000
+      internalID: -9121072937696323526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_25
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 548
+        width: 46
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24427b5c689ad850800000000000000
+      internalID: 6402597411418686510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_26
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 548
+        width: 56
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d286dee30389d720800000000000000
+      internalID: 2871470290340578007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_27
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 424
+        width: 73
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e655f444cc044440800000000000000
+      internalID: 4919070730105476832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_28
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 425
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ff0567192873690800000000000000
+      internalID: -7622480283034386531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_29
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 425
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e29f85bd6d899c0800000000000000
+      internalID: -3920147238047109571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_30
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 426
+        width: 25
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c86f0035b60ba10800000000000000
+      internalID: 1923155045129817150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_31
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 426
+        width: 41
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f2396f9e33e6050800000000000000
+      internalID: 5795626850429644576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_32
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 426
+        width: 43
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f37d3265ab88190800000000000000
+      internalID: -7959907462246088891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_33
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 425
+        width: 60
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa16ee6b8e647260800000000000000
+      internalID: 7094416858155457270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_34
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 426
+        width: 61
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0134eab23312010800000000000000
+      internalID: 1162266441538539746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_35
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 426
+        width: 83
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb368f6be41b4a10800000000000000
+      internalID: 1894631069660363747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_36
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 423
+        width: 86
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11cf6cf90cb989e30800000000000000
+      internalID: 4510526278428195857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_37
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 428
+        width: 74
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a30bc1dabacc1f0800000000000000
+      internalID: -1023254255320942016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_38
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 424
+        width: 60
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b6eb9300ea8d510800000000000000
+      internalID: 1574199385758001937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_39
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 426
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f7fa7155c877f60800000000000000
+      internalID: 8032042757536055176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_40
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 423
+        width: 53
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86768bc1b21dc860800000000000000
+      internalID: 7551712705003288207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_41
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 424
+        width: 63
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2cb38c8dc30a140800000000000000
+      internalID: 4728846510508982988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_42
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 258
+        width: 32
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c15377631c82f880800000000000000
+      internalID: -8578640325219495485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_43
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 249
+        width: 54
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f7ae5302ad4b430800000000000000
+      internalID: 3797900217658539820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_44
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 263
+        width: 95
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a7f8dda315d6a50800000000000000
+      internalID: 6515953549142096537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_45
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 259
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ca8e77b7f8f3a80800000000000000
+      internalID: -8484905412487238549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_46
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 279
+        width: 68
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f834f1272d2b91ac0800000000000000
+      internalID: -3883876586702814321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_47
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 264
+        width: 112
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2e314edcc02ab60800000000000000
+      internalID: 7755775586719752869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_48
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 265
+        width: 72
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f28f3d08a76d3d0800000000000000
+      internalID: -3182221392960016523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_49
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 268
+        width: 118
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df315367afb5cd20800000000000000
+      internalID: 3298253027765469143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_50
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 265
+        width: 72
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39eca2681fc9ced0800000000000000
+      internalID: -2393154023329044165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_51
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 265
+        width: 46
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16346e60bc8f146b0800000000000000
+      internalID: -5313692534442671263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_52
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 265
+        width: 63
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6fdf38771cd2c790800000000000000
+      internalID: -7511199235140755604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objetos_Cenario_53
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 265
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af55db3ca24a78db0800000000000000
+      internalID: -4789679175105686022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 292253c0cc58eec4b83452053ddba7d7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Objetos_Cenario_0: 310109279016166769
+      Objetos_Cenario_1: 5035787948354175479
+      Objetos_Cenario_10: -4485407745102601371
+      Objetos_Cenario_11: 8841426706870387629
+      Objetos_Cenario_12: 7998488643304110831
+      Objetos_Cenario_13: 5509256624623996860
+      Objetos_Cenario_14: 3810614808300153797
+      Objetos_Cenario_15: 8076008620781942740
+      Objetos_Cenario_16: 7137195966149409644
+      Objetos_Cenario_17: 2625874754293002411
+      Objetos_Cenario_18: 4151398243791397647
+      Objetos_Cenario_19: -8351208244572616495
+      Objetos_Cenario_2: -1963962198672957242
+      Objetos_Cenario_20: -8618737135564545393
+      Objetos_Cenario_21: 3196858995353762639
+      Objetos_Cenario_22: 4994806717758001569
+      Objetos_Cenario_23: 7693749448128595648
+      Objetos_Cenario_24: -9121072937696323526
+      Objetos_Cenario_25: 6402597411418686510
+      Objetos_Cenario_26: 2871470290340578007
+      Objetos_Cenario_27: 4919070730105476832
+      Objetos_Cenario_28: -7622480283034386531
+      Objetos_Cenario_29: -3920147238047109571
+      Objetos_Cenario_3: -1438876383707109379
+      Objetos_Cenario_30: 1923155045129817150
+      Objetos_Cenario_31: 5795626850429644576
+      Objetos_Cenario_32: -7959907462246088891
+      Objetos_Cenario_33: 7094416858155457270
+      Objetos_Cenario_34: 1162266441538539746
+      Objetos_Cenario_35: 1894631069660363747
+      Objetos_Cenario_36: 4510526278428195857
+      Objetos_Cenario_37: -1023254255320942016
+      Objetos_Cenario_38: 1574199385758001937
+      Objetos_Cenario_39: 8032042757536055176
+      Objetos_Cenario_4: -6555210490372708187
+      Objetos_Cenario_40: 7551712705003288207
+      Objetos_Cenario_41: 4728846510508982988
+      Objetos_Cenario_42: -8578640325219495485
+      Objetos_Cenario_43: 3797900217658539820
+      Objetos_Cenario_44: 6515953549142096537
+      Objetos_Cenario_45: -8484905412487238549
+      Objetos_Cenario_46: -3883876586702814321
+      Objetos_Cenario_47: 7755775586719752869
+      Objetos_Cenario_48: -3182221392960016523
+      Objetos_Cenario_49: 3298253027765469143
+      Objetos_Cenario_5: 5888678375528958242
+      Objetos_Cenario_50: -2393154023329044165
+      Objetos_Cenario_51: -5313692534442671263
+      Objetos_Cenario_52: -7511199235140755604
+      Objetos_Cenario_53: -4789679175105686022
+      Objetos_Cenario_6: 6823999737555638920
+      Objetos_Cenario_7: -181138912910653538
+      Objetos_Cenario_8: -781246103720194652
+      Objetos_Cenario_9: 9117170567872583777
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
