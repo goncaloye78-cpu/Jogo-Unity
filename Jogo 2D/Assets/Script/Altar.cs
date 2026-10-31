@@ -4,11 +4,18 @@ public class Altar : MonoBehaviour
 {
     private Animator animator;
     private bool playerPerto;
-    private bool jaInteragiu =false;
+    private bool jaInteragiu;
+
+    public GameObject textoInteracao;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+
+        if (textoInteracao != null)
+        {
+            textoInteracao.SetActive(false);
+        }
     }
 
     void Update()
@@ -17,6 +24,11 @@ public class Altar : MonoBehaviour
         {
             animator.SetTrigger("RetirarEspada");
             jaInteragiu = true;
+
+            if (textoInteracao != null)
+            {
+                textoInteracao.SetActive(false);
+            }
         }
     }
 
@@ -25,6 +37,11 @@ public class Altar : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerPerto = true;
+
+            if (!jaInteragiu && textoInteracao != null)
+            {
+                textoInteracao.SetActive(true);
+            }
         }
     }
 
@@ -33,6 +50,11 @@ public class Altar : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerPerto = false;
+
+            if (textoInteracao != null)
+            {
+                textoInteracao.SetActive(false);
+            }
         }
     }
 }
