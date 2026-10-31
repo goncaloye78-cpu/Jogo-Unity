@@ -59,11 +59,11 @@ public class PlataformaVoadora : MonoBehaviour
 
         if (nextposition.x > transform.position.x)
         {
-            spriteRenderer.flipX = true;
+            spriteRenderer.flipX = false;
         }
         else if (nextposition.x < transform.position.x)
         {
-            spriteRenderer.flipX = false;
+            spriteRenderer.flipX = true;
         }
     }
 

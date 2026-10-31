@@ -88,7 +88,8 @@ public class Player : MonoBehaviour
             // Se o input e a velocidade física forem quase nulos, força o Idle
             if (Mathf.Abs(moveInput) < 0.1f && Mathf.Abs(rb.linearVelocity.x) < 0.1f)
             {
-                ChangeAnimationState("playerIdle");
+                //Não mudar para o playerIDLE, era isso q tava a bugar pq o nome 'Walk' fica guardado no sistema e se mudares o nome muda s visualmente
+                ChangeAnimationState("Walk");
             }
             else
             {
@@ -97,7 +98,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            if (rb.linearVelocityY > 0)
+            if (rb.linearVelocity.y > 0)
             {
                 ChangeAnimationState("playerJump");
             }
