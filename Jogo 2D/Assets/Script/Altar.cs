@@ -6,7 +6,8 @@ public class Altar : MonoBehaviour
     private bool playerPerto;
     private bool jaInteragiu;
 
-    public GameObject textoInteracao;
+    public GameObject textoInteracao; // Arrasta o teu objeto "Interagir" para aqui no Inspector
+    public Vector3 offsetCanvas = new Vector3(0, 80, 0); // Desvio em pixéis para ficar acima do Altar
 
     void Start()
     {
@@ -20,6 +21,13 @@ public class Altar : MonoBehaviour
 
     void Update()
     {
+        // Se o jogador estiver perto, atualizar a posição do texto para seguir o Altar no ecrã
+        if (playerPerto && !jaInteragiu && textoInteracao != null && textoInteracao.activeSelf)
+        {
+            Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position);
+            textoInteracao.transform.position = screenPos + offsetCanvas;
+        }
+
         if (playerPerto && !jaInteragiu && Input.GetKeyDown(KeyCode.E))
         {
             animator.SetTrigger("RetirarEspada");
