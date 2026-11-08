@@ -31,6 +31,9 @@ public class Player : MonoBehaviour
     public int extraJumpValue = 1;
     private int extraJump;
 
+    // --- Morte do Player ----
+    public GameOver gameOverManager;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -143,6 +146,12 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
+        StopAllCoroutines();
+        spriteRenderer.color = Color.white;
+        rb.linearVelocity = Vector2.zero;
+
+        gameOverManager.MostrarMorte();
+
+        enabled = false;
     }
 }

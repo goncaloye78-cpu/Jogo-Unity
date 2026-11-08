@@ -11,6 +11,8 @@ public class PlayerAttack : MonoBehaviour
     public LayerMask whatIsEnemies;
     void update()
     {
+
+        /*
         if(timeBtwAttack <= 0)
         {
             if (Input.GetKey(KeyCode.K))
@@ -28,5 +30,7 @@ public class PlayerAttack : MonoBehaviour
         {
             timeBtwAttack -= Time.deltaTime;
         }
+
+        */
     }
 }
