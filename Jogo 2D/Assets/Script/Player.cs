@@ -27,6 +27,15 @@ public class Player : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private string currentAnimation = "";
 
+    // --- ESPADA / ATAQUE ------------------------
+    public bool temEspada = false; // Booleano que controla se tem a espada
+    public float timeBtwAttack;
+    public float startTimeBtwAttack;
+    public Transform attackPos;
+    public float attackrange;
+    public LayerMask whatIsEnemies;
+    public int damage;
+
     // --- DOUBLE JUMP ------------------------
     public int extraJumpValue = 1;
     private int extraJump;
@@ -48,13 +57,35 @@ public class Player : MonoBehaviour
     {
         float moveInput = Input.GetAxisRaw("Horizontal");
 
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocityY);
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
 
+        // --- SISTEMA DE ATAQUE (Só ataca se tiver a espada) ---
+        if (temEspada)
+        {
+            if (timeBtwAttack <= 0)
+            {
+                if (Input.GetKey(KeyCode.K))
+                {
+                    timeBtwAttack = startTimeBtwAttack;
+                    Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackrange, whatIsEnemies);
+                    for (int i = 0; i < enemiesToDamage.Length; i++)
+                    {
+                        enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+                    }
+                }
+            }
+            else
+            {
+                timeBtwAttack -= Time.deltaTime;
+            }
+        }
+
+        // Atualizar corações da UI
         for (int i = 0; i < hearts.Length; i++)
         {
             if (i < vida) hearts[i].sprite = fullHeart;
@@ -72,11 +103,10 @@ public class Player : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 
-    // ----------------------- ANIMAÇÂO -------------------------------
+    // ----------------------- ANIMAÇÃO -------------------------------
 
     private void SetAnimation(float moveInput)
     {
-        // MODIFICADO: Símbolos do flip invertidos para corrigir o moonwalk!
         if (moveInput > 0.1f)
         {
             spriteRenderer.flipX = true;
@@ -88,26 +118,30 @@ public class Player : MonoBehaviour
 
         if (isGrounded)
         {
-            // Se o input e a velocidade física forem quase nulos, força o Idle
             if (Mathf.Abs(moveInput) < 0.1f && Mathf.Abs(rb.linearVelocity.x) < 0.1f)
             {
-                //Não mudar para o playerIDLE, era isso q tava a bugar pq o nome 'Walk' fica guardado no sistema e se mudares o nome muda s visualmente
-                ChangeAnimationState("Walk");
+                // Muda o nome da animação idle dependendo de ter ou não a espada
+                string idleAnim = temEspada ? "playerIdleSword" : "Walk"; // Ajusta "playerIdleSword" para o nome real da tua animação com espada
+                ChangeAnimationState(idleAnim);
             }
             else
             {
-                ChangeAnimationState("playerRun");
+                // Muda o nome da animação de andar/correr dependendo de ter ou não a espada
+                string runAnim = temEspada ? "playerRunSword" : "playerRun"; // Ajusta para o nome real
+                ChangeAnimationState(runAnim);
             }
         }
         else
         {
             if (rb.linearVelocity.y > 0)
             {
-                ChangeAnimationState("playerJump");
+                string jumpAnim = temEspada ? "playerJumpSword" : "playerJump"; // Ajusta para o nome real
+                ChangeAnimationState(jumpAnim);
             }
             else
             {
-                ChangeAnimationState("playerFall");
+                string fallAnim = temEspada ? "playerFallSword" : "playerFall"; // Ajusta para o nome real
+                ChangeAnimationState(fallAnim);
             }
         }
     }
@@ -153,5 +187,14 @@ public class Player : MonoBehaviour
         gameOverManager.MostrarMorte();
 
         enabled = false;
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (attackPos != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(attackPos.position, attackrange);
+        }
     }
 }

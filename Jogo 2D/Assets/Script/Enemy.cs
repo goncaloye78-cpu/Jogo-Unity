@@ -1,32 +1,9 @@
 using UnityEngine;
 
-public class PlataformaVoadora : MonoBehaviour
+using UnityEngine;
+
+public class Enemy : MonoBehaviour
 {
-    /*
-    public float speed = 2f;
-    public Transform[] points;
-
-    private int i;  
-
-    void Start()
-    {
-        transform.position = points[i].position;
-    }
-
-    void Update()
-    {
-        if(Vector2.Distance(transform.position, points[i].position) < 0.02f)
-        {
-            i++;
-            if (i == points.Length)
-            {
-                i = 0;
-            }
-            transform.position = Vector2.MoveTowards(transform.position, points[i].position, speed * Time.deltaTime);
-        }
-    }
-    */
-
     public Transform pointA;
     public Transform pointB;
     public float speed = 2f;
@@ -34,6 +11,7 @@ public class PlataformaVoadora : MonoBehaviour
     private Vector3 nextposition;
     private SpriteRenderer spriteRenderer;
     private float previousX;
+    public int health = 3; // Podes definir logo aqui ou no inspetor
 
     private void Start()
     {
@@ -67,23 +45,19 @@ public class PlataformaVoadora : MonoBehaviour
         }
     }
 
-    /*
-     Plataforma mover-se e quando o Player Ficar em Cima sofrer Inércia
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void TakeDamage(int damage)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        health -= damage;
+
+        if (health <= 0)
         {
-            collision.transform.SetParent(transform);
+            Die();
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    // CORRIGIDO: Fora do TakeDamage
+    void Die()
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            collision.transform.SetParent(null, true);
-        }
+        Destroy(gameObject);
     }
-    */
 }
