@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MouseHide : MonoBehaviour
 {
-    void Start()
+    /*void Start()
     {
         // Oculta o cursor apenas no Menu Principal
         Cursor.visible = false;
@@ -13,5 +13,17 @@ public class MouseHide : MonoBehaviour
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+    }*/
+
+    void Start()
+    {        
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    void OnDestroy()
+    {    
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }
