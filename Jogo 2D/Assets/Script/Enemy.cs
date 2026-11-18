@@ -1,7 +1,5 @@
 using UnityEngine;
 
-using UnityEngine;
-
 public class Enemy : MonoBehaviour
 {
     public Transform pointA;
@@ -11,7 +9,7 @@ public class Enemy : MonoBehaviour
     private Vector3 nextposition;
     private SpriteRenderer spriteRenderer;
     private float previousX;
-    public int health = 3; // Podes definir logo aqui ou no inspetor
+    public int health = 3;
 
     private void Start()
     {
@@ -55,7 +53,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    // CORRIGIDO: Fora do TakeDamage
     void Die()
     {
         Destroy(gameObject);
