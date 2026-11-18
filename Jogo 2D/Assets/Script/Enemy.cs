@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -46,6 +48,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        StartCoroutine(BlinkRed());
 
         if (health <= 0)
         {
@@ -53,8 +56,16 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    private IEnumerator BlinkRed()
+    {
+        spriteRenderer.color = Color.yellow;
+        yield return new WaitForSeconds(0.5f);
+        spriteRenderer.color = Color.white;
+    }
+
     void Die()
     {
         Destroy(gameObject);
     }
+    
 }
