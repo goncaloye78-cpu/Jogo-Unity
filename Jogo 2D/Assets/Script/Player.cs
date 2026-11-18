@@ -28,13 +28,15 @@ public class Player : MonoBehaviour
     private string currentAnimation = "";
 
     // --- ESPADA / ATAQUE ------------------------
-    public bool temEspada = false; // Booleano que controla se tem a espada
+    public bool temEspada = false;
     public float timeBtwAttack;
     public float startTimeBtwAttack;
     public Transform attackPos;
     public float attackrange;
     public LayerMask whatIsEnemies;
-    public int damage;
+    public int damage = 1;
+
+    private float attackPosX;
 
     // --- DOUBLE JUMP ------------------------
     public int extraJumpValue = 1;
@@ -51,6 +53,11 @@ public class Player : MonoBehaviour
 
         vida = vidaMax;
         extraJump = extraJumpValue;
+
+        if (attackPos != null)
+        {
+            attackPosX = Mathf.Abs(attackPos.localPosition.x);
+        }
     }
 
     void Update()
@@ -75,7 +82,14 @@ public class Player : MonoBehaviour
                     Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackrange, whatIsEnemies);
                     for (int i = 0; i < enemiesToDamage.Length; i++)
                     {
-                        enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+                        if (enemiesToDamage[i].TryGetComponent(out Enemy enemy))
+                        {
+                            enemy.TakeDamage(damage);
+                        }
+                        else if (enemiesToDamage[i].TryGetComponent(out Obstaculo obstaculo))
+                        {
+                            obstaculo.TakeDamage(damage);
+                        }
                     }
                 }
             }
@@ -103,31 +117,37 @@ public class Player : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 
-    // ----------------------- ANIMAÇÃO -------------------------------
+    // ----------------------- ANIMAÇÃO E DIREÇÃO -------------------------------
 
     private void SetAnimation(float moveInput)
     {
         if (moveInput > 0.1f)
         {
             spriteRenderer.flipX = true;
+            if (attackPos != null)
+            {
+                attackPos.localPosition = new Vector3(attackPosX, attackPos.localPosition.y, attackPos.localPosition.z);
+            }
         }
         else if (moveInput < -0.1f)
         {
             spriteRenderer.flipX = false;
+            if (attackPos != null)
+            {
+                attackPos.localPosition = new Vector3(-attackPosX, attackPos.localPosition.y, attackPos.localPosition.z);
+            }
         }
 
         if (isGrounded)
         {
             if (Mathf.Abs(moveInput) < 0.1f && Mathf.Abs(rb.linearVelocity.x) < 0.1f)
             {
-                // Muda o nome da animação idle dependendo de ter ou não a espada
-                string idleAnim = temEspada ? "playerIdleSword" : "Walk"; // Ajusta "playerIdleSword" para o nome real da tua animação com espada
+                string idleAnim = temEspada ? "playerIdleSword" : "Walk";
                 ChangeAnimationState(idleAnim);
             }
             else
             {
-                // Muda o nome da animação de andar/correr dependendo de ter ou não a espada
-                string runAnim = temEspada ? "playerRunSword" : "playerRun"; // Ajusta para o nome real
+                string runAnim = temEspada ? "playerRunSword" : "playerRun";
                 ChangeAnimationState(runAnim);
             }
         }
@@ -135,12 +155,12 @@ public class Player : MonoBehaviour
         {
             if (rb.linearVelocity.y > 0)
             {
-                string jumpAnim = temEspada ? "playerJumpSword" : "playerJump"; // Ajusta para o nome real
+                string jumpAnim = temEspada ? "playerJumpSword" : "playerJump";
                 ChangeAnimationState(jumpAnim);
             }
             else
             {
-                string fallAnim = temEspada ? "playerFallSword" : "playerFall"; // Ajusta para o nome real
+                string fallAnim = temEspada ? "playerFallSword" : "playerFall";
                 ChangeAnimationState(fallAnim);
             }
         }

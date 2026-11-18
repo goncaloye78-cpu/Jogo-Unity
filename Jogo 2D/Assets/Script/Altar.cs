@@ -33,7 +33,7 @@ public class Altar : MonoBehaviour
             jaInteragiu = true;
 
             // Encontra o Player na cena e ativa a espada dele!
-            Player player = FindFirstObjectByType<Player>();
+            Player player = FindAnyObjectByType<Player>();
             if (player != null)
             {
                 player.temEspada = true;
