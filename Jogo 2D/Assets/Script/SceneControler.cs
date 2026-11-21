@@ -6,6 +6,24 @@ public class SceneControler : MonoBehaviour
     [Tooltip("Nome exato da cena para a qual você quer ir")]
     [SerializeField] private string nomeDaProximaCena;
 
+    // public static SceneControler Instance;
+
+    /*
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    */
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Verifica se o objeto que encostou é o Player (baseado na Tag "Player")
