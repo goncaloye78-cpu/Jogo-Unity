@@ -41,9 +41,33 @@ public class Player : MonoBehaviour
     // --- DOUBLE JUMP ------------------------
     public int extraJumpValue = 1;
     private int extraJump;
+    public bool temDoubleJump = false;
+
+    private float groundGraceTime = 0.15f;  //pro efeito do coyote time (aquela cena dos milissegundos para aterrizar no chao)
+    private float groundTimer;
+    private bool coyoteJumpUsed;
 
     // --- Morte do Player ----
-    public GameOver gameOverManager;
+    // public GameOver gameOverManager;
+
+    private GameObject orbPerto;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("DoubleJump"))
+        {
+            orbPerto = collision.gameObject;
+            Debug.Log("Carrega em E para desbloquear o Double Jump!");
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject == orbPerto)
+        {
+            orbPerto = null;
+        }
+    }
 
     void Start()
     {
@@ -66,9 +90,51 @@ public class Player : MonoBehaviour
 
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
+        if (orbPerto != null && Input.GetKeyDown(KeyCode.E))
+        {
+            temDoubleJump = true;
+            extraJump = extraJumpValue;
+
+            Destroy(orbPerto);
+            orbPerto = null;
+
+            Debug.Log("Double Jump desbloqueado!");
+        }
+
+        /*
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
+        */
+
+        if (isGrounded)
+        {
+            groundTimer = groundGraceTime;
+            extraJump = extraJumpValue;
+            coyoteJumpUsed = false;
+        }
+        else
+        {
+            groundTimer -= Time.deltaTime;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (isGrounded || (groundTimer > 0 && !coyoteJumpUsed))
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+
+                if (!isGrounded)
+                    coyoteJumpUsed = true;
+
+                groundTimer = 0;
+            }
+            else if (temDoubleJump && extraJump > 0)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                extraJump--;
+            }
         }
 
         // --- SISTEMA DE ATAQUE (Só ataca se tiver a espada) ---
@@ -204,7 +270,16 @@ public class Player : MonoBehaviour
         spriteRenderer.color = Color.white;
         rb.linearVelocity = Vector2.zero;
 
-        gameOverManager.MostrarMorte();
+        GameOver gameOverAtual = FindAnyObjectByType<GameOver>();
+
+        if (gameOverAtual != null)
+        {
+            gameOverAtual.MostrarMorte();
+        }
+        else
+        {
+            Debug.LogError("Não existe GameOver nesta cena!");
+        }
 
         enabled = false;
     }

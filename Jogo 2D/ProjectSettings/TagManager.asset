@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Damage
   - LightOrb
+  - DoubleJump
   layers:
   - Default
   - TransparentFX

@@ -77,4 +77,12 @@ public class PlayerPersistence : MonoBehaviour
 
         Debug.LogWarning("Não foi encontrado o SpawnPoint: " + targetID);
     }
+
+    private void OnDestroy()
+    {
+        if (instance == this)
+        {
+            instance = null;
+        }
+    }
 }

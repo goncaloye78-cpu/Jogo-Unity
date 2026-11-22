@@ -47,11 +47,38 @@ public class GameOver : MonoBehaviour
 
     public void Recomeçar()
     {
-        /*
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        */
+        StartCoroutine(EliminarPlayerECarregar("GameScene"));
+    }
 
+    public void VoltarAoMenu()
+    {
+        Time.timeScale = 1f;
+        StartCoroutine(EliminarPlayerECarregar("Menu"));
+    }
+
+    private IEnumerator EliminarPlayerECarregar(string cena)
+    {
+        SceneTransitionData.spawnID = "";
+
+        PlayerPersistence player =
+            FindAnyObjectByType<PlayerPersistence>();
+
+        if (player != null)
+        {
+            Destroy(player.gameObject);
+        }
+
+        // Espera que o Player antigo seja destruído
+        yield return null;
+
+        SceneManager.LoadScene(cena);
+    }
+
+    /*
+
+    public void Recomeçar()
+    {
         /*
         // Reativar o tempo
         Time.timeScale = 1f;
@@ -74,26 +101,33 @@ public class GameOver : MonoBehaviour
         SceneManager.LoadScene("GameScene");
         */
 
-        Time.timeScale = 1f;
+    /*
+    Time.timeScale = 1f;
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
-        StopAllCoroutines();
 
-        deathPanel.SetActive(false);
+    Time.timeScale = 1f;
 
-        canvasGroup.alpha = 0f;
-        canvasGroup.interactable = false;
-        canvasGroup.blocksRaycasts = false;
+    StopAllCoroutines();
 
-        // Definir o Spawn Point inicial da Fase 1
-        SceneTransitionData.spawnID = "SP_Inicial";
+    deathPanel.SetActive(false);
 
-        // Carregar sempre a primeira fase
-        SceneManager.LoadScene("GameScene");
-    }
+    canvasGroup.alpha = 0f;
+    canvasGroup.interactable = false;
+    canvasGroup.blocksRaycasts = false;
 
-    public void VoltarAoMenu()
-    {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("Menu");
-    }
+    // Definir o Spawn Point inicial da Fase 1
+    SceneTransitionData.spawnID = "SP_Inicial";
+
+    // Carregar sempre a primeira fase
+    SceneManager.LoadScene("GameScene");
+
+}
+
+public void VoltarAoMenu()
+{
+    Time.timeScale = 1f;
+    SceneManager.LoadScene("Menu");
+}
+*/
 }
