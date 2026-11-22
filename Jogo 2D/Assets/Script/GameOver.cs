@@ -47,8 +47,48 @@ public class GameOver : MonoBehaviour
 
     public void Recomeçar()
     {
+        /*
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        */
+
+        /*
+        // Reativar o tempo
+        Time.timeScale = 1f;
+
+        // Parar corrotinas
+        StopAllCoroutines();
+
+        // Destruir o Player antigo
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+        if (player != null)
+        {
+            Destroy(player);
+        }
+
+        // Limpar dados de transição
+        SceneTransitionData.spawnID = "";
+
+        // Carregar a primeira fase
+        SceneManager.LoadScene("GameScene");
+        */
+
+        Time.timeScale = 1f;
+
+        StopAllCoroutines();
+
+        deathPanel.SetActive(false);
+
+        canvasGroup.alpha = 0f;
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
+
+        // Definir o Spawn Point inicial da Fase 1
+        SceneTransitionData.spawnID = "SP_Inicial";
+
+        // Carregar sempre a primeira fase
+        SceneManager.LoadScene("GameScene");
     }
 
     public void VoltarAoMenu()
