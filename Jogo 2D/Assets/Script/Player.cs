@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -142,20 +143,16 @@ public class Player : MonoBehaviour
         {
             if (timeBtwAttack <= 0)
             {
-                if (Input.GetKey(KeyCode.K))
+                if (Input.GetKey(KeyCode.K) && attackPos != null)
                 {
                     timeBtwAttack = startTimeBtwAttack;
                     Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackrange, whatIsEnemies);
                     for (int i = 0; i < enemiesToDamage.Length; i++)
                     {
-                        if (enemiesToDamage[i].TryGetComponent(out Enemy enemy))
-                        {
-                            enemy.TakeDamage(damage);
-                        }
-                        else if (enemiesToDamage[i].TryGetComponent(out Obstaculo obstaculo))
-                        {
-                            obstaculo.TakeDamage(damage);
-                        }
+                        if (enemiesToDamage[i].transform == transform || enemiesToDamage[i].transform.IsChildOf(transform))
+                            continue;
+
+                        ChamarTakeDamageNaHierarquia(enemiesToDamage[i].transform, damage, transform.position);
                     }
                 }
             }
@@ -178,6 +175,50 @@ public class Player : MonoBehaviour
         SetAnimation(moveInput);
     }
 
+    private void ChamarTakeDamageNaHierarquia(Transform alvo, int dano, Vector3 origemAtaque)
+    {
+        Transform atual = alvo;
+
+        while (atual != null)
+        {
+            MonoBehaviour[] scripts = atual.GetComponents<MonoBehaviour>();
+
+            foreach (MonoBehaviour script in scripts)
+            {
+                if (script == null) continue;
+
+                var metodoComPos = script.GetType().GetMethod(
+                    "TakeDamage",
+                    BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic,
+                    null,
+                    new System.Type[] { typeof(int), typeof(Vector3?) },
+                    null
+                );
+
+                if (metodoComPos != null)
+                {
+                    metodoComPos.Invoke(script, new object[] { dano, (Vector3?)origemAtaque });
+                    return;
+                }
+
+                var metodoSimples = script.GetType().GetMethod(
+                    "TakeDamage",
+                    BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic,
+                    null,
+                    new System.Type[] { typeof(int) },
+                    null
+                );
+
+                if (metodoSimples != null)
+                {
+                    metodoSimples.Invoke(script, new object[] { dano });
+                    return;
+                }
+            }
+
+            atual = atual.parent;
+        }
+    }
     private void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
@@ -293,3 +334,4 @@ public class Player : MonoBehaviour
         }
     }
 }
+

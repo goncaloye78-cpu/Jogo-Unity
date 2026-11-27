@@ -12,6 +12,12 @@ public class Enemy : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private float previousX;
     public int health = 3;
+    [Header("Knockback")]
+    public float knockbackForce = 4f;
+    public float knockbackDuration = 0.15f;
+
+    private bool isKnockedBack;
+    private Coroutine knockbackCoroutine;
 
     private void Start()
     {
@@ -22,6 +28,7 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
+        if (isKnockedBack) return;
         transform.position = Vector3.MoveTowards(
             transform.position,
             nextposition,
@@ -45,10 +52,15 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, Vector3? attackerPos = null)
     {
         health -= damage;
-        StartCoroutine(BlinkRed());
+
+        if (knockbackCoroutine != null)
+        {
+            StopCoroutine(knockbackCoroutine);
+        }
+        knockbackCoroutine = StartCoroutine(Knockback(attackerPos));
 
         if (health <= 0)
         {
@@ -56,13 +68,31 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private IEnumerator BlinkRed()
+    private IEnumerator Knockback(Vector3? attackerPos)
     {
-        spriteRenderer.color = Color.yellow;
-        yield return new WaitForSeconds(0.5f);
-        spriteRenderer.color = Color.white;
-    }
+        isKnockedBack = true;
 
+        float dirX;
+        if (attackerPos.HasValue)
+        {
+            dirX = transform.position.x >= attackerPos.Value.x ? 1f : -1f;
+        }
+        else
+        {
+            dirX = spriteRenderer != null && spriteRenderer.flipX ? 1f : -1f;
+        }
+
+        float timer = 0f;
+        while (timer < knockbackDuration)
+        {
+            transform.position += new Vector3(dirX * knockbackForce * Time.deltaTime, 0f, 0f);
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        isKnockedBack = false;
+        knockbackCoroutine = null;
+    }
     void Die()
     {
         Destroy(gameObject);

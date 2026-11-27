@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: e2afabeaabf026148b9ac1b8e5572a60
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 873248417987688390
+    second: espadas-ataque (1)_0
+  - first:
+      213: -5915451876955239369
+    second: espadas-ataque (1)_1
+  - first:
+      213: 6878968728046947348
+    second: espadas-ataque (1)_2
+  - first:
+      213: -1546308609510293345
+    second: espadas-ataque (1)_3
+  - first:
+      213: -1468803430874963455
+    second: espadas-ataque (1)_4
+  - first:
+      213: -8986859685361111311
+    second: espadas-ataque (1)_5
+  - first:
+      213: -57726901445879999
+    second: espadas-ataque (1)_6
+  - first:
+      213: -8065025122051264891
+    second: espadas-ataque (1)_7
+  - first:
+      213: -5964679031868274466
+    second: espadas-ataque (1)_8
+  - first:
+      213: 2716121646321886302
+    second: espadas-ataque (1)_9
+  - first:
+      213: 5383456941981935653
+    second: espadas-ataque (1)_10
+  - first:
+      213: -3540073324656904639
+    second: espadas-ataque (1)_11
+  - first:
+      213: -849351385294200881
+    second: espadas-ataque (1)_12
+  - first:
+      213: 8851524322674719386
+    second: espadas-ataque (1)_13
+  - first:
+      213: 3748327004292704326
+    second: espadas-ataque (1)_14
+  - first:
+      213: -4257253476105208019
+    second: espadas-ataque (1)_15
+  - first:
+      213: -4667377045550174617
+    second: espadas-ataque (1)_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: espadas-ataque (1)_0
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 5309
+        width: 312
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7f3da3fc66e1c00800000000000000
+      internalID: 873248417987688390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_1
+      rect:
+        serializedVersion: 2
+        x: 3529
+        y: 5309
+        width: 192
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c4a2cfbd718eda0800000000000000
+      internalID: -5915451876955239369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_2
+      rect:
+        serializedVersion: 2
+        x: 5909
+        y: 5309
+        width: 192
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c4240ac91077f50800000000000000
+      internalID: 6878968728046947348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 4109
+        width: 302
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f90c20923886a8ae0800000000000000
+      internalID: -1546308609510293345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_4
+      rect:
+        serializedVersion: 2
+        x: 3429
+        y: 4109
+        width: 302
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102a2d9cf03cd9be0800000000000000
+      internalID: -1468803430874963455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_5
+      rect:
+        serializedVersion: 2
+        x: 5839
+        y: 4109
+        width: 272
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fea5c70bb2484380800000000000000
+      internalID: -8986859685361111311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_6
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 3229
+        width: 142
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147955160b9e23ff0800000000000000
+      internalID: -57726901445879999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_7
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 2909
+        width: 302
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e688fb166431090800000000000000
+      internalID: -8065025122051264891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_8
+      rect:
+        serializedVersion: 2
+        x: 3729
+        y: 3229
+        width: 132
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed84542d504393da0800000000000000
+      internalID: -5964679031868274466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_9
+      rect:
+        serializedVersion: 2
+        x: 3569
+        y: 2909
+        width: 412
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54e3c72f3a91b520800000000000000
+      internalID: 2716121646321886302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_10
+      rect:
+        serializedVersion: 2
+        x: 5969
+        y: 2899
+        width: 412
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528a172e091e5ba40800000000000000
+      internalID: 5383456941981935653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_11
+      rect:
+        serializedVersion: 2
+        x: 6319
+        y: 3009
+        width: 62
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1463dfc31122fdec0800000000000000
+      internalID: -3540073324656904639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_12
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1689
+        width: 412
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf9d064a6f7634f0800000000000000
+      internalID: -849351385294200881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_13
+      rect:
+        serializedVersion: 2
+        x: 3569
+        y: 1689
+        width: 412
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ab1cd597ee6da70800000000000000
+      internalID: 8851524322674719386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_14
+      rect:
+        serializedVersion: 2
+        x: 5959
+        y: 1709
+        width: 402
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648eed80d8bb40430800000000000000
+      internalID: 3748327004292704326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_15
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 509
+        width: 382
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2fb3f5f4823be4c0800000000000000
+      internalID: -4257253476105208019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: espadas-ataque (1)_16
+      rect:
+        serializedVersion: 2
+        x: 3549
+        y: 509
+        width: 362
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e6b2f4e452a3fb0800000000000000
+      internalID: -4667377045550174617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      espadas-ataque (1)_0: 873248417987688390
+      espadas-ataque (1)_1: -5915451876955239369
+      espadas-ataque (1)_10: 5383456941981935653
+      espadas-ataque (1)_11: -3540073324656904639
+      espadas-ataque (1)_12: -849351385294200881
+      espadas-ataque (1)_13: 8851524322674719386
+      espadas-ataque (1)_14: 3748327004292704326
+      espadas-ataque (1)_15: -4257253476105208019
+      espadas-ataque (1)_16: -4667377045550174617
+      espadas-ataque (1)_2: 6878968728046947348
+      espadas-ataque (1)_3: -1546308609510293345
+      espadas-ataque (1)_4: -1468803430874963455
+      espadas-ataque (1)_5: -8986859685361111311
+      espadas-ataque (1)_6: -57726901445879999
+      espadas-ataque (1)_7: -8065025122051264891
+      espadas-ataque (1)_8: -5964679031868274466
+      espadas-ataque (1)_9: 2716121646321886302
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8836,6 +8836,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   speed: 4
   moveDirection: 1
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  wallCheckDistance: 0.1
   idleSprite: {fileID: 4069653789837775328, guid: 89903ddacf1d92f4d9548a585c95ca8a, type: 3}
   idleAltSprite: {fileID: -846752704420533136, guid: 89903ddacf1d92f4d9548a585c95ca8a, type: 3}
   prepSprite: {fileID: 1753918953600495418, guid: 89903ddacf1d92f4d9548a585c95ca8a, type: 3}
@@ -8852,7 +8859,9 @@ MonoBehaviour:
   damageSprite: {fileID: -5574295780595956768, guid: 89903ddacf1d92f4d9548a585c95ca8a, type: 3}
   damageSpriteDuration: 0.25
   knockbackForce: 4
+  knockbackUpForce: 3.5
   knockbackDuration: 0.2
+  knockbackGravity: 22
   health: 3
 --- !u!95 &1204901038
 Animator:
