@@ -178,7 +178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4001783300880377582, guid: a335577e9c38a6642a112635459d691e, type: 3}
       propertyPath: m_Name
-      value: SP_1
+      value: 7.1
       objectReference: {fileID: 0}
     - target: {fileID: 8771786500006147226, guid: a335577e9c38a6642a112635459d691e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -432,7 +432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3409970130912532673, guid: 61ceb629ed4f003499d256dcdb6920d5, type: 3}
       propertyPath: m_Name
-      value: C2_Tp2
+      value: C_5.3
       objectReference: {fileID: 0}
     - target: {fileID: 8942070489748594167, guid: 61ceb629ed4f003499d256dcdb6920d5, type: 3}
       propertyPath: nomeDaProximaCena
@@ -440,7 +440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8942070489748594167, guid: 61ceb629ed4f003499d256dcdb6920d5, type: 3}
       propertyPath: spawnPointDestino
-      value: SP_6.3
+      value: SP_5.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -505,7 +505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3409970130912532673, guid: 61ceb629ed4f003499d256dcdb6920d5, type: 3}
       propertyPath: m_Name
-      value: C2_Tp2 (1)
+      value: C_8.1
       objectReference: {fileID: 0}
     - target: {fileID: 8942070489748594167, guid: 61ceb629ed4f003499d256dcdb6920d5, type: 3}
       propertyPath: nomeDaProximaCena
@@ -12988,7 +12988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4001783300880377582, guid: a335577e9c38a6642a112635459d691e, type: 3}
       propertyPath: m_Name
-      value: SP_1 (1)
+      value: 7.2
       objectReference: {fileID: 0}
     - target: {fileID: 8771786500006147226, guid: a335577e9c38a6642a112635459d691e, type: 3}
       propertyPath: m_LocalPosition.x
